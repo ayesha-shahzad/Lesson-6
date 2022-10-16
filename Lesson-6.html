@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Modify this section to solve the homework. Uncomment the codes below. */
+      div p {
+        background-color: yellow;       
+      }
+      div > p {
+        background-color: orange;
+      }
+      div ~ p {
+        background-color: blue;
+      }
+      div + p {
+        background-color: green;
+      }
+      h2{
+        text-shadow: 2px 2px 5px red;
+      }
+      p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 14px;
+      }
+      a{
+        background-color: #0095B6;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        cursor: auto;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Let's make a rainbow</h2>
+
+    <p>
+      Use combinators in internal CSS and inline CSS to produce rainbow below.
+      Make the link into a button with "Bondi Blue" color.
+    </p>
+
+    <!--Use inline for Red; use predefined name-->
+    <p style="background-color: red">Red</p>
+    <div>
+      <!--Use internal CSS + combinators for orange and yellow-->
+      <p>Orange</p>
+      <section>
+        <p>Yellow</p>
+      </section>
+    </div>
+    <!--Use internal CSS + combinators for green and blue-->
+    <p>Green</p>
+    <p>Blue</p>
+    <!--Use inline for Indigo; use hex-->
+    <p style="background-color: #4B0082;">Indigo</p>
+    <!--Use inline for Indigo; use rgb-->
+    <p style="background-color: rgb(238,130,238);">Violet</p>
+
+    <a href="#">Rainbows are awesome!</a>
+  </body>
+</html>
